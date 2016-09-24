@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^imgapp/', include('imgapp.urls')),
+    url(r'^imgapp/', include('imgapp.urls', namespace="imgapp")),
     url(r'^admin/', include(admin.site.urls)),
 ]
